@@ -10,6 +10,11 @@ const routes = [
     path: "/contacts/:id",
     name: "EditContact",
     component: () => import("../views/ContactEdit"),
+  },
+  {
+    path: "/add",
+    name: "AddContact",
+    component: () => import("../views/AddContact"),
   },    
 ];
 const router = createRouter({
